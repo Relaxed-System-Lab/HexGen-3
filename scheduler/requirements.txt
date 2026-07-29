@@ -1,0 +1,10 @@
+aiohttp
+datasets
+humanize
+huggingface_hub
+httpx
+nvidia-ml-py
+numpy
+PyYAML
+requests
+transformers

@@ -1,0 +1,216 @@
+{
+  "allocation": {
+    "pre": {
+      "NVDA:H100:SXM": 1,
+      "NVDA:H20": 2
+    },
+    "attn": {
+      "NVDA:H100:SXM": 1,
+      "NVDA:H20": 1
+    },
+    "ffn": {
+      "NVDA:H100:SXM": 2,
+      "NVDA:H20": 1
+    }
+  },
+  "parallelism": {
+    "attn/NVDA:H100:SXM": {
+      "dp": 1,
+      "tp": 1,
+      "ep": 1,
+      "gpus": 1
+    },
+    "attn/NVDA:H20": {
+      "dp": 1,
+      "tp": 1,
+      "ep": 1,
+      "gpus": 1
+    },
+    "ffn/NVDA:H100:SXM": {
+      "dp": 1,
+      "tp": 2,
+      "ep": 1,
+      "gpus": 2
+    },
+    "ffn/NVDA:H20": {
+      "dp": 1,
+      "tp": 1,
+      "ep": 1,
+      "gpus": 1
+    },
+    "pre/NVDA:H100:SXM": {
+      "dp": 1,
+      "tp": 1,
+      "ep": 1,
+      "gpus": 1
+    },
+    "pre/NVDA:H20": {
+      "dp": 2,
+      "tp": 1,
+      "ep": 1,
+      "gpus": 2
+    }
+  },
+  "slice_plans": {
+    "attn/NVDA:H100:SXM": {
+      "gpus": 1,
+      "throughput_req_s": 12.489070082079062,
+      "strategy": {
+        "dp": 1,
+        "tp": 1,
+        "ep": 1
+      }
+    },
+    "attn/NVDA:H20": {
+      "gpus": 1,
+      "throughput_req_s": 16.05734363618575,
+      "strategy": {
+        "dp": 1,
+        "tp": 1,
+        "ep": 1
+      }
+    },
+    "ffn/NVDA:H100:SXM": {
+      "gpus": 2,
+      "throughput_req_s": 17.71218659197413,
+      "strategy": {
+        "dp": 1,
+        "tp": 2,
+        "ep": 1
+      }
+    },
+    "ffn/NVDA:H20": {
+      "gpus": 1,
+      "throughput_req_s": 5.970902532813672,
+      "strategy": {
+        "dp": 1,
+        "tp": 1,
+        "ep": 1
+      }
+    },
+    "pre/NVDA:H100:SXM": {
+      "gpus": 1,
+      "throughput_req_s": 35.56508159187653,
+      "strategy": {
+        "dp": 1,
+        "tp": 1,
+        "ep": 1
+      }
+    },
+    "pre/NVDA:H20": {
+      "gpus": 2,
+      "throughput_req_s": 12.602473167099319,
+      "strategy": {
+        "dp": 2,
+        "tp": 1,
+        "ep": 1
+      }
+    }
+  },
+  "throughput_req_s": {
+    "pre": 48.16755475897585,
+    "attn": 28.54641371826481,
+    "ffn": 23.683089124787802
+  },
+  "system_throughput_req_s": 23.683089124787802,
+  "estimated_latency_s": 0.10659656631501051,
+  "cost_per_hour": 14.24,
+  "req_per_dollar": 5987.297812446354,
+  "iterations": 8,
+  "metadata": {
+    "capacity": {
+      "NVDA:H100:SXM": 4,
+      "NVDA:H20": 4
+    },
+    "global_scheduler": {
+      "iterations": 12,
+      "stability_iterations": 6,
+      "initial_temperature": 0.25,
+      "cooling_rate": 0.92,
+      "block_size": 1,
+      "seed": 7,
+      "keep_history": true
+    }
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "temperature": 0.25,
+      "reward": 0.0,
+      "accepted": true,
+      "current_bottleneck": 10.453324142006071,
+      "candidate_bottleneck": 10.453324142006071,
+      "best_bottleneck": 10.453324142006071
+    },
+    {
+      "iteration": 1,
+      "temperature": 0.23,
+      "reward": 13.229764982781731,
+      "accepted": true,
+      "current_bottleneck": 23.683089124787802,
+      "candidate_bottleneck": 23.683089124787802,
+      "best_bottleneck": 23.683089124787802
+    },
+    {
+      "iteration": 2,
+      "temperature": 0.2116,
+      "reward": -13.229764982781731,
+      "accepted": false,
+      "current_bottleneck": 23.683089124787802,
+      "candidate_bottleneck": 10.453324142006071,
+      "best_bottleneck": 23.683089124787802
+    },
+    {
+      "iteration": 3,
+      "temperature": 0.194672,
+      "reward": -11.080615957688483,
+      "accepted": false,
+      "current_bottleneck": 23.683089124787802,
+      "candidate_bottleneck": 12.602473167099319,
+      "best_bottleneck": 23.683089124787802
+    },
+    {
+      "iteration": 4,
+      "temperature": 0.17909824000000002,
+      "reward": -7.625745488602053,
+      "accepted": false,
+      "current_bottleneck": 23.683089124787802,
+      "candidate_bottleneck": 16.05734363618575,
+      "best_bottleneck": 23.683089124787802
+    },
+    {
+      "iteration": 5,
+      "temperature": 0.16477038080000003,
+      "reward": -11.080615957688483,
+      "accepted": false,
+      "current_bottleneck": 23.683089124787802,
+      "candidate_bottleneck": 12.602473167099319,
+      "best_bottleneck": 23.683089124787802
+    },
+    {
+      "iteration": 6,
+      "temperature": 0.15158875033600003,
+      "reward": -11.080615957688483,
+      "accepted": false,
+      "current_bottleneck": 23.683089124787802,
+      "candidate_bottleneck": 12.602473167099319,
+      "best_bottleneck": 23.683089124787802
+    },
+    {
+      "iteration": 7,
+      "temperature": 0.13946165030912003,
+      "reward": -7.625745488602053,
+      "accepted": false,
+      "current_bottleneck": 23.683089124787802,
+      "candidate_bottleneck": 16.05734363618575,
+      "best_bottleneck": 23.683089124787802
+    }
+  ],
+  "workload": {
+    "arrival_rate": 4.0,
+    "mean_input": 1576,
+    "mean_output": 242,
+    "mean_decode_context": 1697,
+    "max_batch_size": 8
+  }
+}

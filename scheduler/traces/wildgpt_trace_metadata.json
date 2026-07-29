@@ -1,0 +1,40 @@
+{
+  "fetched_rows": 300,
+  "input_tokens": {
+    "max": 4344,
+    "mean": 92.51719576719577,
+    "median": 13.0,
+    "min": 1,
+    "p50": 13,
+    "p90": 219,
+    "p95": 392,
+    "p99": 1362
+  },
+  "interpretation": "WildGPT in the HexGen-3 paper is treated as a WildChat-derived ChatGPT serving trace.",
+  "license": "ODC-BY for WildChat-1M, per dataset card",
+  "online_basic_info": {
+    "wildchat_1m_gpt4_share": 0.2553,
+    "wildchat_1m_rows_observed_on_dataset_card": 837989,
+    "wildchat_1m_summary": "1M user-ChatGPT conversations, demographic/request-header metadata, GPT-3.5/GPT-4 collection, non-toxic public release.",
+    "wildchat_4_8m_full_after_minors_removal": 4743336,
+    "wildchat_4_8m_public_non_toxic_conversations": 3199860,
+    "wildchat_paper_turns": "over 2.5M interaction turns"
+  },
+  "output_tokens": {
+    "max": 2082,
+    "mean": 273.2050264550264,
+    "median": 168.5,
+    "min": 1,
+    "p50": 169,
+    "p90": 734,
+    "p95": 915,
+    "p99": 1171
+  },
+  "paper_url": "https://huggingface.co/papers/2405.01470",
+  "raw_text_persisted": false,
+  "request_count": 756,
+  "source_dataset": "allenai/WildChat-1M",
+  "source_url": "https://huggingface.co/datasets/allenai/WildChat-1M",
+  "token_estimator": "ceil(character_count / 4)",
+  "trace_name": "WildGPT"
+}

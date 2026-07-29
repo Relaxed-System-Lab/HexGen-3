@@ -1,0 +1,53 @@
+# OS and editor files
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Python caches and local environments
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.egg-info/
+build/
+dist/
+
+# Native build outputs
+**/CMakeFiles/
+**/cmake-build-*/
+*.o
+*.so
+*.dylib
+*.a
+compile_commands.json
+
+# Runtime-generated artifacts
+data/*
+!data/hexgen3_decode_workload_trace.json
+**/runtime_logs/
+**/sglang_afd_metrics/
+**/afd_runtime_state.json
+**/hexgen3_runtime_pids.json
+**/hexgen3_live_autoscaling_plan.json
+
+# Component outputs not included in the release snapshot
+comm/logs/
+scheduler/meta/
+scheduler/server.log
+
+# Legacy environment-specific cluster integrations
+scheduler/simulator/real/
+scheduler/tools/
+scheduler/tests/test_prod.py
+scheduler/tests/test_real_spinup.py

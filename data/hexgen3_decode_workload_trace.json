@@ -1,0 +1,4 @@
+[
+  {"name":"low_balanced","duration_s":120,"request_rate":8,"input_len":512,"output_len":128},
+  {"name":"high_decode_surge","duration_s":140,"request_rate":32,"input_len":512,"output_len":1024}
+]

@@ -1,0 +1,226 @@
+{
+  "allocation": {
+    "pre": {
+      "NVDA:H100:SXM": 0,
+      "NVDA:H20": 1
+    },
+    "attn": {
+      "NVDA:H100:SXM": 1,
+      "NVDA:H20": 1
+    },
+    "ffn": {
+      "NVDA:H100:SXM": 1,
+      "NVDA:H20": 0
+    }
+  },
+  "parallelism": {
+    "attn/NVDA:H100:SXM": {
+      "dp": 1,
+      "tp": 1,
+      "ep": 1,
+      "gpus": 1,
+      "uniform": true,
+      "replicas": [
+        {
+          "tp": 1,
+          "ep": 1,
+          "gpus": 1
+        }
+      ]
+    },
+    "attn/NVDA:H20": {
+      "dp": 1,
+      "tp": 1,
+      "ep": 1,
+      "gpus": 1,
+      "uniform": true,
+      "replicas": [
+        {
+          "tp": 1,
+          "ep": 1,
+          "gpus": 1
+        }
+      ]
+    },
+    "ffn/NVDA:H100:SXM": {
+      "dp": 1,
+      "tp": 1,
+      "ep": 1,
+      "gpus": 1,
+      "uniform": true,
+      "replicas": [
+        {
+          "tp": 1,
+          "ep": 1,
+          "gpus": 1
+        }
+      ]
+    },
+    "pre/NVDA:H20": {
+      "dp": 1,
+      "tp": 1,
+      "ep": 1,
+      "gpus": 1,
+      "uniform": true,
+      "replicas": [
+        {
+          "tp": 1,
+          "ep": 1,
+          "gpus": 1
+        }
+      ]
+    }
+  },
+  "slice_plans": {
+    "attn/NVDA:H100:SXM": {
+      "gpus": 1,
+      "throughput_req_s": 15.022417581200472,
+      "reconfiguration_cost_s": 0.0,
+      "score": 4506.725274360141,
+      "strategy": {
+        "dp": 1,
+        "tp": 1,
+        "ep": 1,
+        "gpus": 1,
+        "uniform": true,
+        "replicas": [
+          {
+            "tp": 1,
+            "ep": 1,
+            "gpus": 1
+          }
+        ]
+      }
+    },
+    "attn/NVDA:H20": {
+      "gpus": 1,
+      "throughput_req_s": 19.788829317933956,
+      "reconfiguration_cost_s": 0.0,
+      "score": 5936.648795380187,
+      "strategy": {
+        "dp": 1,
+        "tp": 1,
+        "ep": 1,
+        "gpus": 1,
+        "uniform": true,
+        "replicas": [
+          {
+            "tp": 1,
+            "ep": 1,
+            "gpus": 1
+          }
+        ]
+      }
+    },
+    "ffn/NVDA:H100:SXM": {
+      "gpus": 1,
+      "throughput_req_s": 4.842616202788216,
+      "reconfiguration_cost_s": 0.0,
+      "score": 1452.7848608364648,
+      "strategy": {
+        "dp": 1,
+        "tp": 1,
+        "ep": 1,
+        "gpus": 1,
+        "uniform": true,
+        "replicas": [
+          {
+            "tp": 1,
+            "ep": 1,
+            "gpus": 1
+          }
+        ]
+      }
+    },
+    "pre/NVDA:H20": {
+      "gpus": 1,
+      "throughput_req_s": 7.095089140550837,
+      "reconfiguration_cost_s": 0.0,
+      "score": 2128.526742165251,
+      "strategy": {
+        "dp": 1,
+        "tp": 1,
+        "ep": 1,
+        "gpus": 1,
+        "uniform": true,
+        "replicas": [
+          {
+            "tp": 1,
+            "ep": 1,
+            "gpus": 1
+          }
+        ]
+      }
+    }
+  },
+  "throughput_req_s": {
+    "pre": 7.095089140550837,
+    "attn": 34.81124689913443,
+    "ffn": 4.842616202788216
+  },
+  "system_throughput_req_s": 4.842616202788216,
+  "estimated_latency_s": 0.6489868128226433,
+  "tail_latency_s": {
+    "mean": 0.6489868128226433,
+    "p50": 0.18013758366612365,
+    "p95": 2.270743809376313,
+    "p99": 3.175177365960696
+  },
+  "cost_per_hour": 7.12,
+  "req_per_dollar": 2448.513810398536,
+  "iterations": 3,
+  "metadata": {
+    "capacity": {
+      "NVDA:H100:SXM": 2,
+      "NVDA:H20": 2
+    },
+    "global_scheduler": {
+      "iterations": 3,
+      "stability_iterations": 3,
+      "initial_temperature": 0.25,
+      "cooling_rate": 0.92,
+      "block_size": 0,
+      "model_size_billions": 8.0,
+      "allow_empty_source": true,
+      "seed": 7,
+      "keep_history": true
+    },
+    "effective_block_size": 1
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "temperature": 0.25,
+      "reward": 4.842616202788216,
+      "accepted": true,
+      "current_bottleneck": 4.842616202788216,
+      "candidate_bottleneck": 4.842616202788216,
+      "best_bottleneck": 4.842616202788216
+    },
+    {
+      "iteration": 1,
+      "temperature": 0.23,
+      "reward": -4.842616202788216,
+      "accepted": false,
+      "current_bottleneck": 4.842616202788216,
+      "candidate_bottleneck": 0.0,
+      "best_bottleneck": 4.842616202788216
+    },
+    {
+      "iteration": 2,
+      "temperature": 0.2116,
+      "reward": -4.842616202788216,
+      "accepted": false,
+      "current_bottleneck": 4.842616202788216,
+      "candidate_bottleneck": 0.0,
+      "best_bottleneck": 4.842616202788216
+    }
+  ],
+  "workload": {
+    "arrival_rate": 2.0,
+    "mean_input": 1408,
+    "mean_output": 224,
+    "mean_decode_context": 1520,
+    "max_batch_size": 8
+  }
+}

@@ -1,0 +1,3062 @@
+{
+  "dynamic_results": [
+    {
+      "baselines": [
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 8
+            },
+            "pre": {
+              "NVDA:H100:SXM": 4
+            }
+          },
+          "architecture": "PD",
+          "baseline": "SGLang_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 12
+          },
+          "cost_per_hour": 36.839999999999996,
+          "mean_latency_s": 0.05076088173450724,
+          "notes": "Dynamic homogeneous PD baseline with paper Table-1 load.",
+          "p50_latency_s": 0.03177137031610755,
+          "p95_latency_s": 0.15636488939776427,
+          "p99_latency_cost_dollar": 0.0027741718729929112,
+          "p99_latency_s": 0.2710917139732487,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 4,
+                "ep": 1,
+                "gpus": 8,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": true
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 4,
+                "ep": 1,
+                "gpus": 4,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 4306.285981848698,
+          "system_throughput_req_s": 44.06765988091834
+        },
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 3,
+              "NVDA:H20": 8
+            },
+            "pre": {
+              "NVDA:H100:SXM": 1,
+              "NVDA:H20": 0
+            }
+          },
+          "architecture": "PD",
+          "baseline": "HeteroScale_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 4,
+            "NVDA:H20": 8
+          },
+          "cost_per_hour": 27.08,
+          "mean_latency_s": 0.030923254971386382,
+          "notes": "Dynamic heterogeneous PD autoscaling approximation.",
+          "p50_latency_s": 0.018682889478341735,
+          "p95_latency_s": 0.09585513877019025,
+          "p99_latency_cost_dollar": 0.0012238645574050289,
+          "p99_latency_s": 0.16269986730642927,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 2,
+                "ep": 1,
+                "gpus": 3,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": false
+              },
+              "NVDA:H20": {
+                "dp": 4,
+                "ep": 1,
+                "gpus": 8,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": true
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 1,
+                "ep": 1,
+                "gpus": 1,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 9601.193845680818,
+          "system_throughput_req_s": 72.22231370584349
+        },
+        {
+          "allocation": {
+            "attn": {
+              "NVDA:H100:SXM": 3,
+              "NVDA:H20": 5
+            },
+            "ffn": {
+              "NVDA:H100:SXM": 1,
+              "NVDA:H20": 2
+            },
+            "pre": {
+              "NVDA:H100:SXM": 0,
+              "NVDA:H20": 1
+            }
+          },
+          "architecture": "AFD",
+          "baseline": "HexGen3_Autoscale_AFD",
+          "capacity": {
+            "NVDA:H100:SXM": 4,
+            "NVDA:H20": 8
+          },
+          "cost_per_hour": 27.08,
+          "mean_latency_s": 0.019825231322457164,
+          "notes": "Dynamic heterogeneous AFD scheduling approximation.",
+          "p50_latency_s": 0.00999301856584367,
+          "p95_latency_s": 0.0643246062728906,
+          "p99_latency_cost_dollar": 0.0009838178494904978,
+          "p99_latency_s": 0.1307881926944532,
+          "parallelism": {
+            "attn/NVDA:H100:SXM": {
+              "dp": 2,
+              "ep": 1,
+              "gpus": 3,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": false
+            },
+            "attn/NVDA:H20": {
+              "dp": 3,
+              "ep": 1,
+              "gpus": 5,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": false
+            },
+            "ffn/NVDA:H100:SXM": {
+              "dp": 1,
+              "ep": 8,
+              "gpus": 1,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 1,
+                  "tp": 1
+                }
+              ],
+              "tp": 1,
+              "uniform": true
+            },
+            "ffn/NVDA:H20": {
+              "dp": 1,
+              "ep": 8,
+              "gpus": 2,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "pre/NVDA:H20": {
+              "dp": 1,
+              "ep": 1,
+              "gpus": 1,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                }
+              ],
+              "tp": 1,
+              "uniform": true
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 20506.161363062045,
+          "system_throughput_req_s": 154.25190269770005
+        }
+      ],
+      "hour": 1,
+      "request_load": 6600,
+      "resource_budget_gpus": 12,
+      "workload_type": 3
+    },
+    {
+      "baselines": [
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 11
+            },
+            "pre": {
+              "NVDA:H100:SXM": 5
+            }
+          },
+          "architecture": "PD",
+          "baseline": "SGLang_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 16
+          },
+          "cost_per_hour": 49.12,
+          "mean_latency_s": 0.07155053397563817,
+          "notes": "Dynamic homogeneous PD baseline with paper Table-1 load.",
+          "p50_latency_s": 0.04403564970397156,
+          "p95_latency_s": 0.21397484458744742,
+          "p99_latency_cost_dollar": 0.005116823678313157,
+          "p99_latency_s": 0.3750115073682281,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 11,
+                "ep": 1,
+                "gpus": 11,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 5,
+                "ep": 1,
+                "gpus": 5,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 2504.2296158243466,
+          "system_throughput_req_s": 34.16882186924775
+        },
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 5,
+              "NVDA:H20": 12
+            },
+            "pre": {
+              "NVDA:H100:SXM": 1,
+              "NVDA:H20": 0
+            }
+          },
+          "architecture": "PD",
+          "baseline": "HeteroScale_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 6,
+            "NVDA:H20": 12
+          },
+          "cost_per_hour": 40.62,
+          "mean_latency_s": 0.02055752144855129,
+          "notes": "Dynamic heterogeneous PD autoscaling approximation.",
+          "p50_latency_s": 0.012362623553869412,
+          "p95_latency_s": 0.065739212480878,
+          "p99_latency_cost_dollar": 0.0012076634873108907,
+          "p99_latency_s": 0.10703073742784852,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 3,
+                "ep": 1,
+                "gpus": 5,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": false
+              },
+              "NVDA:H20": {
+                "dp": 6,
+                "ep": 1,
+                "gpus": 12,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": true
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 1,
+                "ep": 1,
+                "gpus": 1,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 9949.781470470803,
+          "system_throughput_req_s": 112.26670092514556
+        },
+        {
+          "allocation": {
+            "attn": {
+              "NVDA:H100:SXM": 4,
+              "NVDA:H20": 8
+            },
+            "ffn": {
+              "NVDA:H100:SXM": 1,
+              "NVDA:H20": 4
+            },
+            "pre": {
+              "NVDA:H100:SXM": 1,
+              "NVDA:H20": 0
+            }
+          },
+          "architecture": "AFD",
+          "baseline": "HexGen3_Autoscale_AFD",
+          "capacity": {
+            "NVDA:H100:SXM": 6,
+            "NVDA:H20": 12
+          },
+          "cost_per_hour": 40.62,
+          "mean_latency_s": 0.00884471496404541,
+          "notes": "Dynamic heterogeneous AFD scheduling approximation.",
+          "p50_latency_s": 0.00485116158130694,
+          "p95_latency_s": 0.02798856642284875,
+          "p99_latency_cost_dollar": 0.000520857579792171,
+          "p99_latency_s": 0.0461616762001924,
+          "parallelism": {
+            "attn/NVDA:H100:SXM": {
+              "dp": 2,
+              "ep": 1,
+              "gpus": 4,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "attn/NVDA:H20": {
+              "dp": 4,
+              "ep": 1,
+              "gpus": 8,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "ffn/NVDA:H100:SXM": {
+              "dp": 1,
+              "ep": 8,
+              "gpus": 1,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 1,
+                  "tp": 1
+                }
+              ],
+              "tp": 1,
+              "uniform": true
+            },
+            "ffn/NVDA:H20": {
+              "dp": 2,
+              "ep": 8,
+              "gpus": 4,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 8,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "pre/NVDA:H100:SXM": {
+              "dp": 1,
+              "ep": 1,
+              "gpus": 1,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                }
+              ],
+              "tp": 1,
+              "uniform": true
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 23887.111081901578,
+          "system_throughput_req_s": 269.5262367074561
+        }
+      ],
+      "hour": 2,
+      "request_load": 11200,
+      "resource_budget_gpus": 18,
+      "workload_type": 3
+    },
+    {
+      "baselines": [
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 11
+            },
+            "pre": {
+              "NVDA:H100:SXM": 5
+            }
+          },
+          "architecture": "PD",
+          "baseline": "SGLang_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 16
+          },
+          "cost_per_hour": 49.12,
+          "mean_latency_s": 0.02773048550448934,
+          "notes": "Dynamic homogeneous PD baseline with paper Table-1 load.",
+          "p50_latency_s": 0.016767148308453272,
+          "p95_latency_s": 0.08071952974134255,
+          "p99_latency_cost_dollar": 0.002079307192431328,
+          "p99_latency_s": 0.15239222094366411,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 11,
+                "ep": 1,
+                "gpus": 11,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 5,
+                "ep": 1,
+                "gpus": 5,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 7653.869222172856,
+          "system_throughput_req_s": 104.43279338698075
+        },
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 5,
+              "NVDA:H20": 12
+            },
+            "pre": {
+              "NVDA:H100:SXM": 1,
+              "NVDA:H20": 0
+            }
+          },
+          "architecture": "PD",
+          "baseline": "HeteroScale_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 6,
+            "NVDA:H20": 12
+          },
+          "cost_per_hour": 40.62,
+          "mean_latency_s": 0.007324463977875149,
+          "notes": "Dynamic heterogeneous PD autoscaling approximation.",
+          "p50_latency_s": 0.004166449238556247,
+          "p95_latency_s": 0.024015917594917724,
+          "p99_latency_cost_dollar": 0.0004764175937699984,
+          "p99_latency_s": 0.04222312500177239,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 3,
+                "ep": 1,
+                "gpus": 5,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": false
+              },
+              "NVDA:H20": {
+                "dp": 6,
+                "ep": 1,
+                "gpus": 12,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": true
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 1,
+                "ep": 1,
+                "gpus": 1,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 31756.86772952568,
+          "system_throughput_req_s": 358.32332421481476
+        },
+        {
+          "allocation": {
+            "attn": {
+              "NVDA:H100:SXM": 2,
+              "NVDA:H20": 8
+            },
+            "ffn": {
+              "NVDA:H100:SXM": 3,
+              "NVDA:H20": 4
+            },
+            "pre": {
+              "NVDA:H100:SXM": 1,
+              "NVDA:H20": 0
+            }
+          },
+          "architecture": "AFD",
+          "baseline": "HexGen3_Autoscale_AFD",
+          "capacity": {
+            "NVDA:H100:SXM": 6,
+            "NVDA:H20": 12
+          },
+          "cost_per_hour": 40.62,
+          "mean_latency_s": 0.0030162845852652284,
+          "notes": "Dynamic heterogeneous AFD scheduling approximation.",
+          "p50_latency_s": 0.0015738729952659014,
+          "p95_latency_s": 0.009817666594717167,
+          "p99_latency_cost_dollar": 0.00024154972342242803,
+          "p99_latency_s": 0.021407656433302336,
+          "parallelism": {
+            "attn/NVDA:H100:SXM": {
+              "dp": 1,
+              "ep": 1,
+              "gpus": 2,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "attn/NVDA:H20": {
+              "dp": 4,
+              "ep": 1,
+              "gpus": 8,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "ffn/NVDA:H100:SXM": {
+              "dp": 3,
+              "ep": 8,
+              "gpus": 3,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 8,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 8,
+                  "gpus": 1,
+                  "tp": 1
+                }
+              ],
+              "tp": 1,
+              "uniform": true
+            },
+            "ffn/NVDA:H20": {
+              "dp": 2,
+              "ep": 8,
+              "gpus": 4,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 8,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "pre/NVDA:H100:SXM": {
+              "dp": 1,
+              "ep": 1,
+              "gpus": 1,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                }
+              ],
+              "tp": 1,
+              "uniform": true
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 77589.34679331341,
+          "system_throughput_req_s": 875.4664629845529
+        }
+      ],
+      "hour": 3,
+      "request_load": 61400,
+      "resource_budget_gpus": 18,
+      "workload_type": 1
+    },
+    {
+      "baselines": [
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 11
+            },
+            "pre": {
+              "NVDA:H100:SXM": 5
+            }
+          },
+          "architecture": "PD",
+          "baseline": "SGLang_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 16
+          },
+          "cost_per_hour": 49.12,
+          "mean_latency_s": 0.038335074944047295,
+          "notes": "Dynamic homogeneous PD baseline with paper Table-1 load.",
+          "p50_latency_s": 0.024496992775022264,
+          "p95_latency_s": 0.10628697443504426,
+          "p99_latency_cost_dollar": 0.002481613958341858,
+          "p99_latency_s": 0.1818772445038821,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 11,
+                "ep": 1,
+                "gpus": 11,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 5,
+                "ep": 1,
+                "gpus": 5,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 7653.869222172856,
+          "system_throughput_req_s": 104.43279338698075
+        },
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 7,
+              "NVDA:H20": 16
+            },
+            "pre": {
+              "NVDA:H100:SXM": 1,
+              "NVDA:H20": 0
+            }
+          },
+          "architecture": "PD",
+          "baseline": "HeteroScale_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 8,
+            "NVDA:H20": 16
+          },
+          "cost_per_hour": 54.16,
+          "mean_latency_s": 0.005993968113684116,
+          "notes": "Dynamic heterogeneous PD autoscaling approximation.",
+          "p50_latency_s": 0.0032900043408434776,
+          "p95_latency_s": 0.018728482165094817,
+          "p99_latency_cost_dollar": 0.0006023760986420947,
+          "p99_latency_s": 0.040039770219932436,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 4,
+                "ep": 1,
+                "gpus": 7,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": false
+              },
+              "NVDA:H20": {
+                "dp": 8,
+                "ep": 1,
+                "gpus": 16,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": true
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 1,
+                "ep": 1,
+                "gpus": 1,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 32326.30439770066,
+          "system_throughput_req_s": 486.3312906054077
+        },
+        {
+          "allocation": {
+            "attn": {
+              "NVDA:H100:SXM": 5,
+              "NVDA:H20": 7
+            },
+            "ffn": {
+              "NVDA:H100:SXM": 3,
+              "NVDA:H20": 6
+            },
+            "pre": {
+              "NVDA:H100:SXM": 0,
+              "NVDA:H20": 3
+            }
+          },
+          "architecture": "AFD",
+          "baseline": "HexGen3_Autoscale_AFD",
+          "capacity": {
+            "NVDA:H100:SXM": 8,
+            "NVDA:H20": 16
+          },
+          "cost_per_hour": 54.16,
+          "mean_latency_s": 0.003529762157758459,
+          "notes": "Dynamic heterogeneous AFD scheduling approximation.",
+          "p50_latency_s": 0.0014737140311833485,
+          "p95_latency_s": 0.012043226370643367,
+          "p99_latency_cost_dollar": 0.00041056653492996796,
+          "p99_latency_s": 0.027290242351327265,
+          "parallelism": {
+            "attn/NVDA:H100:SXM": {
+              "dp": 3,
+              "ep": 1,
+              "gpus": 5,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": false
+            },
+            "attn/NVDA:H20": {
+              "dp": 4,
+              "ep": 1,
+              "gpus": 7,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": false
+            },
+            "ffn/NVDA:H100:SXM": {
+              "dp": 3,
+              "ep": 8,
+              "gpus": 3,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 8,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 8,
+                  "gpus": 1,
+                  "tp": 1
+                }
+              ],
+              "tp": 1,
+              "uniform": true
+            },
+            "ffn/NVDA:H20": {
+              "dp": 3,
+              "ep": 8,
+              "gpus": 6,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 8,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 8,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "pre/NVDA:H20": {
+              "dp": 3,
+              "ep": 1,
+              "gpus": 3,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                }
+              ],
+              "tp": 1,
+              "uniform": true
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 62269.437943635116,
+          "system_throughput_req_s": 936.8090997297993
+        }
+      ],
+      "hour": 4,
+      "request_load": 129000,
+      "resource_budget_gpus": 24,
+      "workload_type": 1
+    },
+    {
+      "baselines": [
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 10
+            },
+            "pre": {
+              "NVDA:H100:SXM": 4
+            }
+          },
+          "architecture": "PD",
+          "baseline": "SGLang_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 14
+          },
+          "cost_per_hour": 42.98,
+          "mean_latency_s": 0.03901161393058108,
+          "notes": "Dynamic homogeneous PD baseline with paper Table-1 load.",
+          "p50_latency_s": 0.0249565549668489,
+          "p95_latency_s": 0.11815130437736343,
+          "p99_latency_cost_dollar": 0.002506163573419272,
+          "p99_latency_s": 0.20991598102162357,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 5,
+                "ep": 1,
+                "gpus": 10,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": true
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 4,
+                "ep": 1,
+                "gpus": 4,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 5009.624151561058,
+          "system_throughput_req_s": 59.80934612058174
+        },
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 4,
+              "NVDA:H20": 9
+            },
+            "pre": {
+              "NVDA:H100:SXM": 1,
+              "NVDA:H20": 0
+            }
+          },
+          "architecture": "PD",
+          "baseline": "HeteroScale_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 5,
+            "NVDA:H20": 9
+          },
+          "cost_per_hour": 32.0,
+          "mean_latency_s": 0.025387767315813724,
+          "notes": "Dynamic heterogeneous PD autoscaling approximation.",
+          "p50_latency_s": 0.015967048575916465,
+          "p95_latency_s": 0.07746984760787257,
+          "p99_latency_cost_dollar": 0.001196024871809224,
+          "p99_latency_s": 0.1345527980785377,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 2,
+                "ep": 1,
+                "gpus": 4,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": true
+              },
+              "NVDA:H20": {
+                "dp": 5,
+                "ep": 1,
+                "gpus": 9,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": false
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 1,
+                "ep": 1,
+                "gpus": 1,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 10290.242789605974,
+          "system_throughput_req_s": 91.46882479649756
+        },
+        {
+          "allocation": {
+            "attn": {
+              "NVDA:H100:SXM": 3,
+              "NVDA:H20": 5
+            },
+            "ffn": {
+              "NVDA:H100:SXM": 2,
+              "NVDA:H20": 3
+            },
+            "pre": {
+              "NVDA:H100:SXM": 0,
+              "NVDA:H20": 1
+            }
+          },
+          "architecture": "AFD",
+          "baseline": "HexGen3_Autoscale_AFD",
+          "capacity": {
+            "NVDA:H100:SXM": 5,
+            "NVDA:H20": 9
+          },
+          "cost_per_hour": 32.0,
+          "mean_latency_s": 0.016046740162276335,
+          "notes": "Dynamic heterogeneous AFD scheduling approximation.",
+          "p50_latency_s": 0.008019031255074083,
+          "p95_latency_s": 0.05426606742638995,
+          "p99_latency_cost_dollar": 0.0010282761788142933,
+          "p99_latency_s": 0.115681070116608,
+          "parallelism": {
+            "attn/NVDA:H100:SXM": {
+              "dp": 2,
+              "ep": 1,
+              "gpus": 3,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": false
+            },
+            "attn/NVDA:H20": {
+              "dp": 3,
+              "ep": 1,
+              "gpus": 5,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": false
+            },
+            "ffn/NVDA:H100:SXM": {
+              "dp": 1,
+              "ep": 8,
+              "gpus": 2,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "ffn/NVDA:H20": {
+              "dp": 3,
+              "ep": 8,
+              "gpus": 3,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 8,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 8,
+                  "gpus": 1,
+                  "tp": 1
+                }
+              ],
+              "tp": 1,
+              "uniform": true
+            },
+            "pre/NVDA:H20": {
+              "dp": 1,
+              "ep": 1,
+              "gpus": 1,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                }
+              ],
+              "tp": 1,
+              "uniform": true
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 20875.718042506385,
+          "system_throughput_req_s": 185.56193815561232
+        }
+      ],
+      "hour": 5,
+      "request_load": 13900,
+      "resource_budget_gpus": 14,
+      "workload_type": 4
+    },
+    {
+      "baselines": [
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 8
+            },
+            "pre": {
+              "NVDA:H100:SXM": 4
+            }
+          },
+          "architecture": "PD",
+          "baseline": "SGLang_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 12
+          },
+          "cost_per_hour": 36.839999999999996,
+          "mean_latency_s": 0.03918321212159298,
+          "notes": "Dynamic homogeneous PD baseline with paper Table-1 load.",
+          "p50_latency_s": 0.02455548310848954,
+          "p95_latency_s": 0.12316157767884306,
+          "p99_latency_cost_dollar": 0.0022206917537482135,
+          "p99_latency_s": 0.21700570883533032,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 4,
+                "ep": 1,
+                "gpus": 8,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": true
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 4,
+                "ep": 1,
+                "gpus": 4,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 5529.869653783725,
+          "system_throughput_req_s": 56.58899945705345
+        },
+        {
+          "allocation": {
+            "decode": {
+              "NVDA:H100:SXM": 3,
+              "NVDA:H20": 8
+            },
+            "pre": {
+              "NVDA:H100:SXM": 1,
+              "NVDA:H20": 0
+            }
+          },
+          "architecture": "PD",
+          "baseline": "HeteroScale_Autoscale_PD",
+          "capacity": {
+            "NVDA:H100:SXM": 4,
+            "NVDA:H20": 8
+          },
+          "cost_per_hour": 27.08,
+          "mean_latency_s": 0.023745203861226697,
+          "notes": "Dynamic heterogeneous PD autoscaling approximation.",
+          "p50_latency_s": 0.014622448175288127,
+          "p95_latency_s": 0.07522752330056903,
+          "p99_latency_cost_dollar": 0.0009636073196796533,
+          "p99_latency_s": 0.12810141620556692,
+          "parallelism": {
+            "decode": {
+              "NVDA:H100:SXM": {
+                "dp": 2,
+                "ep": 1,
+                "gpus": 3,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": false
+              },
+              "NVDA:H20": {
+                "dp": 4,
+                "ep": 1,
+                "gpus": 8,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  },
+                  {
+                    "ep": 1,
+                    "gpus": 2,
+                    "tp": 2
+                  }
+                ],
+                "tp": 2,
+                "uniform": true
+              }
+            },
+            "pre": {
+              "NVDA:H100:SXM": {
+                "dp": 1,
+                "ep": 1,
+                "gpus": 1,
+                "replicas": [
+                  {
+                    "ep": 1,
+                    "gpus": 1,
+                    "tp": 1
+                  }
+                ],
+                "tp": 1,
+                "uniform": true
+              }
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 12312.935990268052,
+          "system_throughput_req_s": 92.62064072679411
+        },
+        {
+          "allocation": {
+            "attn": {
+              "NVDA:H100:SXM": 2,
+              "NVDA:H20": 5
+            },
+            "ffn": {
+              "NVDA:H100:SXM": 2,
+              "NVDA:H20": 2
+            },
+            "pre": {
+              "NVDA:H100:SXM": 0,
+              "NVDA:H20": 1
+            }
+          },
+          "architecture": "AFD",
+          "baseline": "HexGen3_Autoscale_AFD",
+          "capacity": {
+            "NVDA:H100:SXM": 4,
+            "NVDA:H20": 8
+          },
+          "cost_per_hour": 27.08,
+          "mean_latency_s": 0.012607374066990393,
+          "notes": "Dynamic heterogeneous AFD scheduling approximation.",
+          "p50_latency_s": 0.006357021775386329,
+          "p95_latency_s": 0.041267606990828654,
+          "p99_latency_cost_dollar": 0.0006016086404135879,
+          "p99_latency_s": 0.07997751497374139,
+          "parallelism": {
+            "attn/NVDA:H100:SXM": {
+              "dp": 1,
+              "ep": 1,
+              "gpus": 2,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "attn/NVDA:H20": {
+              "dp": 3,
+              "ep": 1,
+              "gpus": 5,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                },
+                {
+                  "ep": 1,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": false
+            },
+            "ffn/NVDA:H100:SXM": {
+              "dp": 1,
+              "ep": 8,
+              "gpus": 2,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "ffn/NVDA:H20": {
+              "dp": 1,
+              "ep": 8,
+              "gpus": 2,
+              "replicas": [
+                {
+                  "ep": 8,
+                  "gpus": 2,
+                  "tp": 2
+                }
+              ],
+              "tp": 2,
+              "uniform": true
+            },
+            "pre/NVDA:H20": {
+              "dp": 1,
+              "ep": 1,
+              "gpus": 1,
+              "replicas": [
+                {
+                  "ep": 1,
+                  "gpus": 1,
+                  "tp": 1
+                }
+              ],
+              "tp": 1,
+              "uniform": true
+            }
+          },
+          "per_dollar_throughput_req_per_dollar": 27692.1579414816,
+          "system_throughput_req_s": 208.30656584870047
+        }
+      ],
+      "hour": 6,
+      "request_load": 8200,
+      "resource_budget_gpus": 12,
+      "workload_type": 2
+    }
+  ],
+  "experiment": "HexGen-3 paper mimic",
+  "metric_definitions": {
+    "p99_latency_cost_dollar": "p99_latency_s * cost_per_hour / 3600",
+    "per_dollar_throughput_req_per_dollar": "system_throughput_req_s * 3600 / cost_per_hour"
+  },
+  "model_id": "Qwen/Qwen3-30B-A3B",
+  "paper_configs": {
+    "dynamic_request_loads": [
+      6600,
+      11200,
+      61400,
+      129000,
+      13900,
+      8200
+    ],
+    "dynamic_resource_budgets": [
+      12,
+      18,
+      18,
+      24,
+      14,
+      12
+    ],
+    "dynamic_workload_types": [
+      3,
+      3,
+      1,
+      1,
+      4,
+      2
+    ],
+    "heterogeneous": {
+      "capacity": {
+        "NVDA:H100:SXM": 8,
+        "NVDA:H20": 16
+      },
+      "cost_per_hour": 54.16
+    },
+    "homogeneous": {
+      "capacity": {
+        "NVDA:H100:SXM": 16
+      },
+      "cost_per_hour": 49.12
+    }
+  },
+  "static_results": [
+    {
+      "allocation": {
+        "decode": {
+          "NVDA:H100:SXM": 11
+        },
+        "pre": {
+          "NVDA:H100:SXM": 5
+        }
+      },
+      "architecture": "PD",
+      "baseline": "SGLang_Homo_PD",
+      "capacity": {
+        "NVDA:H100:SXM": 16
+      },
+      "cost_per_hour": 49.12,
+      "mean_latency_s": 0.02146004111777597,
+      "notes": "Homogeneous PD baseline with fixed 1/3 prefill and 2/3 decode split.",
+      "p50_latency_s": 0.013270757771799424,
+      "p95_latency_s": 0.0668340125233371,
+      "p99_latency_cost_dollar": 0.0015643346346370037,
+      "p99_latency_s": 0.11464993250596933,
+      "parallelism": {
+        "decode": {
+          "NVDA:H100:SXM": {
+            "dp": 11,
+            "ep": 1,
+            "gpus": 11,
+            "replicas": [
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              }
+            ],
+            "tp": 1,
+            "uniform": true
+          }
+        },
+        "pre": {
+          "NVDA:H100:SXM": {
+            "dp": 5,
+            "ep": 1,
+            "gpus": 5,
+            "replicas": [
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              }
+            ],
+            "tp": 1,
+            "uniform": true
+          }
+        }
+      },
+      "per_dollar_throughput_req_per_dollar": 7653.869222172856,
+      "system_throughput_req_s": 104.43279338698075
+    },
+    {
+      "allocation": {
+        "attn": {
+          "NVDA:H100:SXM": 5
+        },
+        "ffn": {
+          "NVDA:H100:SXM": 5
+        },
+        "pre": {
+          "NVDA:H100:SXM": 6
+        }
+      },
+      "architecture": "AFD",
+      "baseline": "MegaScaleInfer_Homo_AFD",
+      "capacity": {
+        "NVDA:H100:SXM": 16
+      },
+      "cost_per_hour": 49.12,
+      "mean_latency_s": 0.02378022830829156,
+      "notes": "Homogeneous AFD baseline with uniform allocation and no HexGen-3 local EP/non-uniform search.",
+      "p50_latency_s": 0.014600149528477324,
+      "p95_latency_s": 0.07591161759951603,
+      "p99_latency_cost_dollar": 0.0016550920690745915,
+      "p99_latency_s": 0.12130153600709548,
+      "parallelism": {
+        "attn/NVDA:H100:SXM": {
+          "dp": 5,
+          "ep": 1,
+          "gpus": 5,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            }
+          ],
+          "tp": 1,
+          "uniform": true
+        },
+        "ffn/NVDA:H100:SXM": {
+          "dp": 5,
+          "ep": 1,
+          "gpus": 5,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            }
+          ],
+          "tp": 1,
+          "uniform": true
+        },
+        "pre/NVDA:H100:SXM": {
+          "dp": 6,
+          "ep": 1,
+          "gpus": 6,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            }
+          ],
+          "tp": 1,
+          "uniform": true
+        }
+      },
+      "per_dollar_throughput_req_per_dollar": 4421.97211723992,
+      "system_throughput_req_s": 60.33535288856247
+    },
+    {
+      "allocation": {
+        "decode": {
+          "NVDA:H100:SXM": 7,
+          "NVDA:H20": 16
+        },
+        "pre": {
+          "NVDA:H100:SXM": 1,
+          "NVDA:H20": 0
+        }
+      },
+      "architecture": "PD",
+      "baseline": "HexGen2_Hetero_PD",
+      "capacity": {
+        "NVDA:H100:SXM": 8,
+        "NVDA:H20": 16
+      },
+      "cost_per_hour": 54.16,
+      "mean_latency_s": 0.004911793758513729,
+      "notes": "Heterogeneous PD baseline with optimized prefill/decode split but no AFD-specific EP search.",
+      "p50_latency_s": 0.0026319273916790564,
+      "p95_latency_s": 0.016212373914498812,
+      "p99_latency_cost_dollar": 0.0004003028204880397,
+      "p99_latency_s": 0.026608016132882994,
+      "parallelism": {
+        "decode": {
+          "NVDA:H100:SXM": {
+            "dp": 4,
+            "ep": 1,
+            "gpus": 7,
+            "replicas": [
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              },
+              {
+                "ep": 1,
+                "gpus": 2,
+                "tp": 2
+              },
+              {
+                "ep": 1,
+                "gpus": 2,
+                "tp": 2
+              },
+              {
+                "ep": 1,
+                "gpus": 2,
+                "tp": 2
+              }
+            ],
+            "tp": 2,
+            "uniform": false
+          },
+          "NVDA:H20": {
+            "dp": 8,
+            "ep": 1,
+            "gpus": 16,
+            "replicas": [
+              {
+                "ep": 1,
+                "gpus": 2,
+                "tp": 2
+              },
+              {
+                "ep": 1,
+                "gpus": 2,
+                "tp": 2
+              },
+              {
+                "ep": 1,
+                "gpus": 2,
+                "tp": 2
+              },
+              {
+                "ep": 1,
+                "gpus": 2,
+                "tp": 2
+              },
+              {
+                "ep": 1,
+                "gpus": 2,
+                "tp": 2
+              },
+              {
+                "ep": 1,
+                "gpus": 2,
+                "tp": 2
+              },
+              {
+                "ep": 1,
+                "gpus": 2,
+                "tp": 2
+              },
+              {
+                "ep": 1,
+                "gpus": 2,
+                "tp": 2
+              }
+            ],
+            "tp": 2,
+            "uniform": true
+          }
+        },
+        "pre": {
+          "NVDA:H100:SXM": {
+            "dp": 1,
+            "ep": 1,
+            "gpus": 1,
+            "replicas": [
+              {
+                "ep": 1,
+                "gpus": 1,
+                "tp": 1
+              }
+            ],
+            "tp": 1,
+            "uniform": true
+          }
+        }
+      },
+      "per_dollar_throughput_req_per_dollar": 32326.30439770066,
+      "system_throughput_req_s": 486.3312906054077
+    },
+    {
+      "allocation": {
+        "attn": {
+          "NVDA:H100:SXM": 9
+        },
+        "ffn": {
+          "NVDA:H100:SXM": 6
+        },
+        "pre": {
+          "NVDA:H100:SXM": 1
+        }
+      },
+      "architecture": "AFD",
+      "baseline": "HexGen3_Homo_AFD",
+      "capacity": {
+        "NVDA:H100:SXM": 16
+      },
+      "cost_per_hour": 49.12,
+      "mean_latency_s": 0.003470189851602851,
+      "notes": "Full scheduler on homogeneous H100 AFD.",
+      "p50_latency_s": 0.0017864237576930009,
+      "p95_latency_s": 0.011415562282579117,
+      "p99_latency_cost_dollar": 0.00029067233000179657,
+      "p99_latency_s": 0.02130334666136946,
+      "parallelism": {
+        "attn/NVDA:H100:SXM": {
+          "dp": 5,
+          "ep": 1,
+          "gpus": 9,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            }
+          ],
+          "tp": 2,
+          "uniform": false
+        },
+        "ffn/NVDA:H100:SXM": {
+          "dp": 3,
+          "ep": 8,
+          "gpus": 6,
+          "replicas": [
+            {
+              "ep": 8,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 8,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 8,
+              "gpus": 2,
+              "tp": 2
+            }
+          ],
+          "tp": 2,
+          "uniform": true
+        },
+        "pre/NVDA:H100:SXM": {
+          "dp": 1,
+          "ep": 1,
+          "gpus": 1,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            }
+          ],
+          "tp": 1,
+          "uniform": true
+        }
+      },
+      "per_dollar_throughput_req_per_dollar": 44737.46078255203,
+      "system_throughput_req_s": 610.4177982330432
+    },
+    {
+      "allocation": {
+        "attn": {
+          "NVDA:H100:SXM": 5,
+          "NVDA:H20": 7
+        },
+        "ffn": {
+          "NVDA:H100:SXM": 3,
+          "NVDA:H20": 6
+        },
+        "pre": {
+          "NVDA:H100:SXM": 0,
+          "NVDA:H20": 3
+        }
+      },
+      "architecture": "AFD",
+      "baseline": "HexGen3_Hetero_AFD",
+      "capacity": {
+        "NVDA:H100:SXM": 8,
+        "NVDA:H20": 16
+      },
+      "cost_per_hour": 54.16,
+      "mean_latency_s": 0.0028689409877538366,
+      "notes": "Full scheduler on heterogeneous H100/H20 AFD.",
+      "p50_latency_s": 0.0012616944086403237,
+      "p95_latency_s": 0.009799674017770599,
+      "p99_latency_cost_dollar": 0.000355831427320736,
+      "p99_latency_s": 0.023652015109945523,
+      "parallelism": {
+        "attn/NVDA:H100:SXM": {
+          "dp": 3,
+          "ep": 1,
+          "gpus": 5,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            }
+          ],
+          "tp": 2,
+          "uniform": false
+        },
+        "attn/NVDA:H20": {
+          "dp": 4,
+          "ep": 1,
+          "gpus": 7,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            }
+          ],
+          "tp": 2,
+          "uniform": false
+        },
+        "ffn/NVDA:H100:SXM": {
+          "dp": 3,
+          "ep": 8,
+          "gpus": 3,
+          "replicas": [
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            }
+          ],
+          "tp": 1,
+          "uniform": true
+        },
+        "ffn/NVDA:H20": {
+          "dp": 3,
+          "ep": 8,
+          "gpus": 6,
+          "replicas": [
+            {
+              "ep": 8,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 8,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 8,
+              "gpus": 2,
+              "tp": 2
+            }
+          ],
+          "tp": 2,
+          "uniform": true
+        },
+        "pre/NVDA:H20": {
+          "dp": 3,
+          "ep": 1,
+          "gpus": 3,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            }
+          ],
+          "tp": 1,
+          "uniform": true
+        }
+      },
+      "per_dollar_throughput_req_per_dollar": 62269.437943635116,
+      "system_throughput_req_s": 936.8090997297993
+    },
+    {
+      "allocation": {
+        "attn": {
+          "NVDA:H100:SXM": 5
+        },
+        "ffn": {
+          "NVDA:H100:SXM": 5
+        },
+        "pre": {
+          "NVDA:H100:SXM": 6
+        }
+      },
+      "architecture": "AFD",
+      "baseline": "HexGen3_Homo_UniformAllocation",
+      "capacity": {
+        "NVDA:H100:SXM": 16
+      },
+      "cost_per_hour": 49.12,
+      "mean_latency_s": 0.005565965683776129,
+      "notes": "Ablation: local parallelism optimized, global allocation fixed uniform.",
+      "p50_latency_s": 0.0031489410564597975,
+      "p95_latency_s": 0.017773772599113613,
+      "p99_latency_cost_dollar": 0.0004122935668738664,
+      "p99_latency_s": 0.030216955226912035,
+      "parallelism": {
+        "attn/NVDA:H100:SXM": {
+          "dp": 3,
+          "ep": 1,
+          "gpus": 5,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            }
+          ],
+          "tp": 2,
+          "uniform": false
+        },
+        "ffn/NVDA:H100:SXM": {
+          "dp": 5,
+          "ep": 8,
+          "gpus": 5,
+          "replicas": [
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            }
+          ],
+          "tp": 1,
+          "uniform": true
+        },
+        "pre/NVDA:H100:SXM": {
+          "dp": 6,
+          "ep": 1,
+          "gpus": 6,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            }
+          ],
+          "tp": 1,
+          "uniform": true
+        }
+      },
+      "per_dollar_throughput_req_per_dollar": 24000.241355289407,
+      "system_throughput_req_s": 327.46995982550436
+    },
+    {
+      "allocation": {
+        "attn": {
+          "NVDA:H100:SXM": 6
+        },
+        "ffn": {
+          "NVDA:H100:SXM": 5
+        },
+        "pre": {
+          "NVDA:H100:SXM": 5
+        }
+      },
+      "architecture": "AFD",
+      "baseline": "HexGen3_Homo_UniformParallelism",
+      "capacity": {
+        "NVDA:H100:SXM": 16
+      },
+      "cost_per_hour": 49.12,
+      "mean_latency_s": 0.0048450437060900894,
+      "notes": "Ablation: global allocation optimized, local search restricted to uniform replicas.",
+      "p50_latency_s": 0.0028094183922604543,
+      "p95_latency_s": 0.015600622520377527,
+      "p99_latency_cost_dollar": 0.00034235135720621384,
+      "p99_latency_s": 0.025090897515113397,
+      "parallelism": {
+        "attn/NVDA:H100:SXM": {
+          "dp": 3,
+          "ep": 1,
+          "gpus": 6,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            },
+            {
+              "ep": 1,
+              "gpus": 2,
+              "tp": 2
+            }
+          ],
+          "tp": 2,
+          "uniform": true
+        },
+        "ffn/NVDA:H100:SXM": {
+          "dp": 5,
+          "ep": 8,
+          "gpus": 5,
+          "replicas": [
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 8,
+              "gpus": 1,
+              "tp": 1
+            }
+          ],
+          "tp": 1,
+          "uniform": true
+        },
+        "pre/NVDA:H100:SXM": {
+          "dp": 5,
+          "ep": 1,
+          "gpus": 5,
+          "replicas": [
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            },
+            {
+              "ep": 1,
+              "gpus": 1,
+              "tp": 1
+            }
+          ],
+          "tp": 1,
+          "uniform": true
+        }
+      },
+      "per_dollar_throughput_req_per_dollar": 31105.829140893926,
+      "system_throughput_req_s": 424.4217576113082
+    }
+  ],
+  "trace": "traces/wildgpt_trace.jsonl",
+  "trace_samples": 512
+}

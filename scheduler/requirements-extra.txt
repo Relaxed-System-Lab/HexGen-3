@@ -1,0 +1,9 @@
+# Optional dependencies for visualization and server/benchmark tooling.
+fastapi
+graphviz
+matplotlib
+networkx
+openai
+pandas
+seaborn
+uvicorn

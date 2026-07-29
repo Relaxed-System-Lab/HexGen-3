@@ -1,0 +1,7 @@
+# Files with Chinese in comments: 2, total lines: 2
+
+## scripts/playground/router/test_tree.py (1 lines)
+  86: self.assertEqual(matched, "你好")
+
+## sgl-router/src/core/error.rs (1 lines)
+  193: "Health check failed for worker http://测试:8080: 连接被拒绝"

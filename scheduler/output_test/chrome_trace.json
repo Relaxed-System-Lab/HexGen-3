@@ -1,0 +1,4264 @@
+{
+  "traceEvents": [
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": "node_32",
+      "args": {
+        "name": "Engine: node_32"
+      }
+    },
+    {
+      "name": "process_sort_index",
+      "ph": "M",
+      "pid": "node_32",
+      "args": {
+        "sort_index": 32
+      }
+    },
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": "node_4",
+      "args": {
+        "name": "Engine: node_4"
+      }
+    },
+    {
+      "name": "process_sort_index",
+      "ph": "M",
+      "pid": "node_4",
+      "args": {
+        "sort_index": 4
+      }
+    },
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": "request_tracker",
+      "args": {
+        "name": "Request Lifecycle Tracker"
+      }
+    },
+    {
+      "name": "process_sort_index",
+      "ph": "M",
+      "pid": "request_tracker",
+      "args": {
+        "sort_index": -1
+      }
+    },
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": "node_33",
+      "args": {
+        "name": "Engine: node_33"
+      }
+    },
+    {
+      "name": "process_sort_index",
+      "ph": "M",
+      "pid": "node_33",
+      "args": {
+        "sort_index": 33
+      }
+    },
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": "node_6",
+      "args": {
+        "name": "Engine: node_6"
+      }
+    },
+    {
+      "name": "process_sort_index",
+      "ph": "M",
+      "pid": "node_6",
+      "args": {
+        "sort_index": 6
+      }
+    },
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": "node_2",
+      "args": {
+        "name": "Engine: node_2"
+      }
+    },
+    {
+      "name": "process_sort_index",
+      "ph": "M",
+      "pid": "node_2",
+      "args": {
+        "sort_index": 2
+      }
+    },
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": "node_16",
+      "args": {
+        "name": "Engine: node_16"
+      }
+    },
+    {
+      "name": "process_sort_index",
+      "ph": "M",
+      "pid": "node_16",
+      "args": {
+        "sort_index": 16
+      }
+    },
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": "node_38",
+      "args": {
+        "name": "Engine: node_38"
+      }
+    },
+    {
+      "name": "process_sort_index",
+      "ph": "M",
+      "pid": "node_38",
+      "args": {
+        "sort_index": 38
+      }
+    },
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": "node_23",
+      "args": {
+        "name": "Engine: node_23"
+      }
+    },
+    {
+      "name": "process_sort_index",
+      "ph": "M",
+      "pid": "node_23",
+      "args": {
+        "sort_index": 23
+      }
+    },
+    {
+      "name": "RequestArrival",
+      "cat": "request_lifecycle",
+      "ph": "B",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 159174,
+      "args": {
+        "request_id": "req_1",
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "input_length": 1028,
+        "output_length": 9
+      },
+      "cname": "rail_response"
+    },
+    {
+      "name": "RequestScheduled",
+      "cat": "request_lifecycle",
+      "ph": "I",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 159174,
+      "args": {
+        "request_id": "req_1",
+        "target_engine": "node_6",
+        "placement_reason": "random_selection",
+        "estimated_latency": null
+      },
+      "cname": "rail_response"
+    },
+    {
+      "name": "RequestArrival",
+      "cat": "request_lifecycle",
+      "ph": "B",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 265291,
+      "args": {
+        "request_id": "req_6",
+        "model": "meta-llama/Llama-3.3-70B-Instruct",
+        "input_length": 1028,
+        "output_length": 9
+      },
+      "cname": "good"
+    },
+    {
+      "name": "RequestScheduled",
+      "cat": "request_lifecycle",
+      "ph": "I",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 265291,
+      "args": {
+        "request_id": "req_6",
+        "target_engine": "node_4",
+        "placement_reason": "random_selection",
+        "estimated_latency": null
+      },
+      "cname": "good"
+    },
+    {
+      "name": "RequestComplete",
+      "cat": "request_lifecycle",
+      "ph": "E",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 275998,
+      "args": {
+        "request_id": "req_6",
+        "total_time": 0.010707188879780338,
+        "tokens_generated": 9
+      },
+      "cname": "good"
+    },
+    {
+      "name": "RequestArrival",
+      "cat": "request_lifecycle",
+      "ph": "B",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 410361,
+      "args": {
+        "request_id": "req_2",
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "input_length": 1023,
+        "output_length": 12
+      },
+      "cname": "startup"
+    },
+    {
+      "name": "RequestScheduled",
+      "cat": "request_lifecycle",
+      "ph": "I",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 410361,
+      "args": {
+        "request_id": "req_2",
+        "target_engine": "node_38",
+        "placement_reason": "random_selection",
+        "estimated_latency": null
+      },
+      "cname": "startup"
+    },
+    {
+      "name": "RequestArrival",
+      "cat": "request_lifecycle",
+      "ph": "B",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 595005,
+      "args": {
+        "request_id": "req_3",
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "input_length": 1024,
+        "output_length": 17
+      },
+      "cname": "startup"
+    },
+    {
+      "name": "RequestScheduled",
+      "cat": "request_lifecycle",
+      "ph": "I",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 595005,
+      "args": {
+        "request_id": "req_3",
+        "target_engine": "node_32",
+        "placement_reason": "random_selection",
+        "estimated_latency": null
+      },
+      "cname": "startup"
+    },
+    {
+      "name": "RequestArrival",
+      "cat": "request_lifecycle",
+      "ph": "B",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 683935,
+      "args": {
+        "request_id": "req_7",
+        "model": "meta-llama/Llama-3.3-70B-Instruct",
+        "input_length": 1023,
+        "output_length": 12
+      },
+      "cname": "good"
+    },
+    {
+      "name": "RequestScheduled",
+      "cat": "request_lifecycle",
+      "ph": "I",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 683935,
+      "args": {
+        "request_id": "req_7",
+        "target_engine": "node_2",
+        "placement_reason": "random_selection",
+        "estimated_latency": null
+      },
+      "cname": "good"
+    },
+    {
+      "name": "RequestComplete",
+      "cat": "request_lifecycle",
+      "ph": "E",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 697063,
+      "args": {
+        "request_id": "req_7",
+        "total_time": 0.013128070441973394,
+        "tokens_generated": 12
+      },
+      "cname": "good"
+    },
+    {
+      "name": "RequestComplete",
+      "cat": "request_lifecycle",
+      "ph": "E",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 723795,
+      "args": {
+        "request_id": "req_1",
+        "total_time": 0.5646202976697122,
+        "tokens_generated": 9
+      },
+      "cname": "rail_response"
+    },
+    {
+      "name": "RequestArrival",
+      "cat": "request_lifecycle",
+      "ph": "B",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 752445,
+      "args": {
+        "request_id": "req_4",
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "input_length": 1027,
+        "output_length": 10
+      },
+      "cname": "generic_work"
+    },
+    {
+      "name": "RequestScheduled",
+      "cat": "request_lifecycle",
+      "ph": "I",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 752445,
+      "args": {
+        "request_id": "req_4",
+        "target_engine": "node_33",
+        "placement_reason": "random_selection",
+        "estimated_latency": null
+      },
+      "cname": "generic_work"
+    },
+    {
+      "name": "RequestComplete",
+      "cat": "request_lifecycle",
+      "ph": "E",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 773155,
+      "args": {
+        "request_id": "req_4",
+        "total_time": 0.020709223581525604,
+        "tokens_generated": 10
+      },
+      "cname": "generic_work"
+    },
+    {
+      "name": "RequestArrival",
+      "cat": "request_lifecycle",
+      "ph": "B",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 862655,
+      "args": {
+        "request_id": "req_5",
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "input_length": 1026,
+        "output_length": 11
+      },
+      "cname": "rail_animation"
+    },
+    {
+      "name": "RequestScheduled",
+      "cat": "request_lifecycle",
+      "ph": "I",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 862655,
+      "args": {
+        "request_id": "req_5",
+        "target_engine": "node_23",
+        "placement_reason": "random_selection",
+        "estimated_latency": null
+      },
+      "cname": "rail_animation"
+    },
+    {
+      "name": "RequestArrival",
+      "cat": "request_lifecycle",
+      "ph": "B",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 991676,
+      "args": {
+        "request_id": "req_8",
+        "model": "meta-llama/Llama-3.3-70B-Instruct",
+        "input_length": 1024,
+        "output_length": 17
+      },
+      "cname": "thread_state_iowait"
+    },
+    {
+      "name": "RequestScheduled",
+      "cat": "request_lifecycle",
+      "ph": "I",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 991676,
+      "args": {
+        "request_id": "req_8",
+        "target_engine": "node_16",
+        "placement_reason": "random_selection",
+        "estimated_latency": null
+      },
+      "cname": "thread_state_iowait"
+    },
+    {
+      "name": "RequestComplete",
+      "cat": "request_lifecycle",
+      "ph": "E",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 1517716,
+      "args": {
+        "request_id": "req_5",
+        "total_time": 0.6550610097202899,
+        "tokens_generated": 11
+      },
+      "cname": "rail_animation"
+    },
+    {
+      "name": "RequestComplete",
+      "cat": "request_lifecycle",
+      "ph": "E",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 1700412,
+      "args": {
+        "request_id": "req_2",
+        "total_time": 1.2900517649034475,
+        "tokens_generated": 12
+      },
+      "cname": "startup"
+    },
+    {
+      "name": "RequestComplete",
+      "cat": "request_lifecycle",
+      "ph": "E",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 1918587,
+      "args": {
+        "request_id": "req_8",
+        "total_time": 0.9269114717708675,
+        "tokens_generated": 17
+      },
+      "cname": "thread_state_iowait"
+    },
+    {
+      "name": "RequestComplete",
+      "cat": "request_lifecycle",
+      "ph": "E",
+      "pid": "request_tracker",
+      "tid": "lifecycle",
+      "ts": 2227378,
+      "args": {
+        "request_id": "req_3",
+        "total_time": 1.6323728422809016,
+        "tokens_generated": 17
+      },
+      "cname": "startup"
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 683935,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "P:req_7",
+      "cat": "request.prefill",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 683935,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "prefill",
+        "start_time_s": 0.683935,
+        "end_time_s": 0.687259,
+        "duration_s": 0.003324,
+        "prompt_tokens": 1023,
+        "target_output_tokens": 12
+      },
+      "dur": 3324
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 687259,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.687259,
+        "end_time_s": 0.688076,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 0,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 816
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 688076,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 688076,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.688076,
+        "end_time_s": 0.688893,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 1,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 816
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 688893,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 688893,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.688893,
+        "end_time_s": 0.68971,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 2,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 816
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 689710,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 689710,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.68971,
+        "end_time_s": 0.690527,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 3,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 816
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 690527,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 690527,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.690527,
+        "end_time_s": 0.691344,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 4,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 816
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 691344,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 691344,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.691344,
+        "end_time_s": 0.692161,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 5,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 816
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 692161,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 692161,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.692161,
+        "end_time_s": 0.692978,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 6,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 816
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 692978,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 692978,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.692978,
+        "end_time_s": 0.693795,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 7,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 816
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 693795,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 693795,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.693795,
+        "end_time_s": 0.694612,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 8,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 817
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 694612,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 694612,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.694612,
+        "end_time_s": 0.695429,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 9,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 817
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 695429,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 695429,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.695429,
+        "end_time_s": 0.696246,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 10,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 817
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 696246,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_7",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_2",
+      "tid": 0,
+      "ts": 696246,
+      "args": {
+        "request_id": "req_7",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_2",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.696246,
+        "end_time_s": 0.697063,
+        "duration_s": 0.000817,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 11,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 817
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 697063,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_2",
+      "tid": "engine",
+      "ts": 697063,
+      "args": {
+        "used_blocks": 0,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_4",
+      "tid": "engine",
+      "ts": 265291,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "P:req_6",
+      "cat": "request.prefill",
+      "ph": "X",
+      "pid": "node_4",
+      "tid": 0,
+      "ts": 265291,
+      "args": {
+        "request_id": "req_6",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_4",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "prefill",
+        "start_time_s": 0.265292,
+        "end_time_s": 0.268646,
+        "duration_s": 0.003354,
+        "prompt_tokens": 1028,
+        "target_output_tokens": 9
+      },
+      "dur": 3354
+    },
+    {
+      "name": "D:req_6",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_4",
+      "tid": 0,
+      "ts": 268645,
+      "args": {
+        "request_id": "req_6",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_4",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.268646,
+        "end_time_s": 0.269463,
+        "duration_s": 0.000817,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 0,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 816
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_4",
+      "tid": "engine",
+      "ts": 269462,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_6",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_4",
+      "tid": 0,
+      "ts": 269462,
+      "args": {
+        "request_id": "req_6",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_4",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.269463,
+        "end_time_s": 0.270279,
+        "duration_s": 0.000817,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 1,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 816
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_4",
+      "tid": "engine",
+      "ts": 270279,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_6",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_4",
+      "tid": 0,
+      "ts": 270279,
+      "args": {
+        "request_id": "req_6",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_4",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.270279,
+        "end_time_s": 0.271096,
+        "duration_s": 0.000817,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 2,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 816
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_4",
+      "tid": "engine",
+      "ts": 271096,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_6",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_4",
+      "tid": 0,
+      "ts": 271096,
+      "args": {
+        "request_id": "req_6",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_4",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.271096,
+        "end_time_s": 0.271913,
+        "duration_s": 0.000817,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 3,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 817
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_4",
+      "tid": "engine",
+      "ts": 271913,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_6",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_4",
+      "tid": 0,
+      "ts": 271913,
+      "args": {
+        "request_id": "req_6",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_4",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.271913,
+        "end_time_s": 0.272731,
+        "duration_s": 0.000817,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 4,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 817
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_4",
+      "tid": "engine",
+      "ts": 272730,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_6",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_4",
+      "tid": 0,
+      "ts": 272730,
+      "args": {
+        "request_id": "req_6",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_4",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.272731,
+        "end_time_s": 0.273548,
+        "duration_s": 0.000817,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 5,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 817
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_4",
+      "tid": "engine",
+      "ts": 273547,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_6",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_4",
+      "tid": 0,
+      "ts": 273547,
+      "args": {
+        "request_id": "req_6",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_4",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.273548,
+        "end_time_s": 0.274365,
+        "duration_s": 0.000817,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 6,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 817
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_4",
+      "tid": "engine",
+      "ts": 274364,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_6",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_4",
+      "tid": 0,
+      "ts": 274364,
+      "args": {
+        "request_id": "req_6",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_4",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.274365,
+        "end_time_s": 0.275182,
+        "duration_s": 0.000817,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 7,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 817
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_4",
+      "tid": "engine",
+      "ts": 275181,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_6",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_4",
+      "tid": 0,
+      "ts": 275181,
+      "args": {
+        "request_id": "req_6",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_4",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.275182,
+        "end_time_s": 0.275999,
+        "duration_s": 0.000817,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 8,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 817
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_4",
+      "tid": "engine",
+      "ts": 275998,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_4",
+      "tid": "engine",
+      "ts": 275998,
+      "args": {
+        "used_blocks": 0,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_6",
+      "tid": "engine",
+      "ts": 159174,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "P:req_1",
+      "cat": "request.prefill",
+      "ph": "X",
+      "pid": "node_6",
+      "tid": 0,
+      "ts": 159174,
+      "args": {
+        "request_id": "req_1",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_6",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "prefill",
+        "start_time_s": 0.159175,
+        "end_time_s": 0.315383,
+        "duration_s": 0.156208,
+        "prompt_tokens": 1028,
+        "target_output_tokens": 9
+      },
+      "dur": 156208
+    },
+    {
+      "name": "D:req_1",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_6",
+      "tid": 0,
+      "ts": 315383,
+      "args": {
+        "request_id": "req_1",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_6",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.315383,
+        "end_time_s": 0.360762,
+        "duration_s": 0.045379,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 0,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_6",
+      "tid": "engine",
+      "ts": 360761,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_1",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_6",
+      "tid": 0,
+      "ts": 360761,
+      "args": {
+        "request_id": "req_1",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_6",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.360762,
+        "end_time_s": 0.406141,
+        "duration_s": 0.045379,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 1,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_6",
+      "tid": "engine",
+      "ts": 406140,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_1",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_6",
+      "tid": 0,
+      "ts": 406140,
+      "args": {
+        "request_id": "req_1",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_6",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.406141,
+        "end_time_s": 0.45152,
+        "duration_s": 0.045379,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 2,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_6",
+      "tid": "engine",
+      "ts": 451519,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_1",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_6",
+      "tid": 0,
+      "ts": 451519,
+      "args": {
+        "request_id": "req_1",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_6",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.45152,
+        "end_time_s": 0.496899,
+        "duration_s": 0.045379,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 3,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_6",
+      "tid": "engine",
+      "ts": 496898,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_1",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_6",
+      "tid": 0,
+      "ts": 496898,
+      "args": {
+        "request_id": "req_1",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_6",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.496899,
+        "end_time_s": 0.542278,
+        "duration_s": 0.045379,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 4,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_6",
+      "tid": "engine",
+      "ts": 542277,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_1",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_6",
+      "tid": 0,
+      "ts": 542277,
+      "args": {
+        "request_id": "req_1",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_6",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.542278,
+        "end_time_s": 0.587657,
+        "duration_s": 0.045379,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 5,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_6",
+      "tid": "engine",
+      "ts": 587656,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_1",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_6",
+      "tid": 0,
+      "ts": 587656,
+      "args": {
+        "request_id": "req_1",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_6",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.587657,
+        "end_time_s": 0.633036,
+        "duration_s": 0.045379,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 6,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_6",
+      "tid": "engine",
+      "ts": 633036,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_1",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_6",
+      "tid": 0,
+      "ts": 633036,
+      "args": {
+        "request_id": "req_1",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_6",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.633036,
+        "end_time_s": 0.678416,
+        "duration_s": 0.045379,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 7,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_6",
+      "tid": "engine",
+      "ts": 678415,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_1",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_6",
+      "tid": 0,
+      "ts": 678415,
+      "args": {
+        "request_id": "req_1",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_6",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 0.678416,
+        "end_time_s": 0.723795,
+        "duration_s": 0.04538,
+        "target_output_tokens": 9,
+        "generated_tokens_total": 8,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_6",
+      "tid": "engine",
+      "ts": 723795,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_6",
+      "tid": "engine",
+      "ts": 723795,
+      "args": {
+        "used_blocks": 0,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 991676,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "P:req_8",
+      "cat": "request.prefill",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 991676,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "prefill",
+        "start_time_s": 0.991676,
+        "end_time_s": 1.147143,
+        "duration_s": 0.155467,
+        "prompt_tokens": 1024,
+        "target_output_tokens": 17
+      },
+      "dur": 155466
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1147142,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.147143,
+        "end_time_s": 1.192521,
+        "duration_s": 0.045378,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 0,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1192520,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1192520,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.192521,
+        "end_time_s": 1.237899,
+        "duration_s": 0.045378,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 1,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1237899,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1237899,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.237899,
+        "end_time_s": 1.283278,
+        "duration_s": 0.045378,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 2,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1283277,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1283277,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.283278,
+        "end_time_s": 1.328656,
+        "duration_s": 0.045379,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 3,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1328656,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1328656,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.328656,
+        "end_time_s": 1.374035,
+        "duration_s": 0.045379,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 4,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1374034,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1374034,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.374035,
+        "end_time_s": 1.419414,
+        "duration_s": 0.045379,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 5,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1419413,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1419413,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.419414,
+        "end_time_s": 1.464793,
+        "duration_s": 0.045379,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 6,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1464792,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1464792,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.464793,
+        "end_time_s": 1.510172,
+        "duration_s": 0.045379,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 7,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1510171,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1510171,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.510172,
+        "end_time_s": 1.555551,
+        "duration_s": 0.045379,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 8,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1555550,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1555550,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.555551,
+        "end_time_s": 1.60093,
+        "duration_s": 0.045379,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 9,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1600929,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1600929,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.60093,
+        "end_time_s": 1.646309,
+        "duration_s": 0.045379,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 10,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1646309,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1646309,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.646309,
+        "end_time_s": 1.691689,
+        "duration_s": 0.045379,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 11,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1691688,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1691688,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.691689,
+        "end_time_s": 1.737068,
+        "duration_s": 0.04538,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 12,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1737068,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1737068,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.737068,
+        "end_time_s": 1.782448,
+        "duration_s": 0.04538,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 13,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1782447,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1782447,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.782448,
+        "end_time_s": 1.827828,
+        "duration_s": 0.04538,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 14,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1827827,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1827827,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.827828,
+        "end_time_s": 1.873208,
+        "duration_s": 0.04538,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 15,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1873207,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_8",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_16",
+      "tid": 0,
+      "ts": 1873207,
+      "args": {
+        "request_id": "req_8",
+        "requested_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "engine_id": "node_16",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.873208,
+        "end_time_s": 1.918588,
+        "duration_s": 0.04538,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 16,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45380
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1918587,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_16",
+      "tid": "engine",
+      "ts": 1918587,
+      "args": {
+        "used_blocks": 0,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 862655,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "P:req_5",
+      "cat": "request.prefill",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 862655,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "prefill",
+        "start_time_s": 0.862656,
+        "end_time_s": 1.018548,
+        "duration_s": 0.155892,
+        "prompt_tokens": 1026,
+        "target_output_tokens": 11
+      },
+      "dur": 155892
+    },
+    {
+      "name": "D:req_5",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 1018547,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.018548,
+        "end_time_s": 1.063926,
+        "duration_s": 0.045378,
+        "target_output_tokens": 11,
+        "generated_tokens_total": 0,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1063926,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_5",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 1063926,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.063926,
+        "end_time_s": 1.109305,
+        "duration_s": 0.045379,
+        "target_output_tokens": 11,
+        "generated_tokens_total": 1,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1109304,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_5",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 1109304,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.109305,
+        "end_time_s": 1.154683,
+        "duration_s": 0.045379,
+        "target_output_tokens": 11,
+        "generated_tokens_total": 2,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1154683,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_5",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 1154683,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.154683,
+        "end_time_s": 1.200062,
+        "duration_s": 0.045379,
+        "target_output_tokens": 11,
+        "generated_tokens_total": 3,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1200062,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_5",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 1200062,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.200062,
+        "end_time_s": 1.245441,
+        "duration_s": 0.045379,
+        "target_output_tokens": 11,
+        "generated_tokens_total": 4,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1245440,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_5",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 1245440,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.245441,
+        "end_time_s": 1.29082,
+        "duration_s": 0.045379,
+        "target_output_tokens": 11,
+        "generated_tokens_total": 5,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45378
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1290819,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_5",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 1290819,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.29082,
+        "end_time_s": 1.336199,
+        "duration_s": 0.045379,
+        "target_output_tokens": 11,
+        "generated_tokens_total": 6,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1336199,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_5",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 1336199,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.336199,
+        "end_time_s": 1.381578,
+        "duration_s": 0.045379,
+        "target_output_tokens": 11,
+        "generated_tokens_total": 7,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1381578,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_5",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 1381578,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.381578,
+        "end_time_s": 1.426958,
+        "duration_s": 0.045379,
+        "target_output_tokens": 11,
+        "generated_tokens_total": 8,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1426957,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_5",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 1426957,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.426958,
+        "end_time_s": 1.472337,
+        "duration_s": 0.045379,
+        "target_output_tokens": 11,
+        "generated_tokens_total": 9,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1472337,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_5",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_23",
+      "tid": 0,
+      "ts": 1472337,
+      "args": {
+        "request_id": "req_5",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_23",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:GH200",
+        "phase": "decode",
+        "start_time_s": 1.472337,
+        "end_time_s": 1.517717,
+        "duration_s": 0.04538,
+        "target_output_tokens": 11,
+        "generated_tokens_total": 10,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 45379
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1517716,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_23",
+      "tid": "engine",
+      "ts": 1517716,
+      "args": {
+        "used_blocks": 0,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 595005,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "P:req_3",
+      "cat": "request.prefill",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 595005,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "prefill",
+        "start_time_s": 0.595006,
+        "end_time_s": 1.065104,
+        "duration_s": 0.470098,
+        "prompt_tokens": 1024,
+        "target_output_tokens": 17
+      },
+      "dur": 470097
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1065103,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.065104,
+        "end_time_s": 1.133471,
+        "duration_s": 0.068368,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 0,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68367
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1133471,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1133471,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.133471,
+        "end_time_s": 1.201839,
+        "duration_s": 0.068368,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 1,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68367
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1201839,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1201839,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.201839,
+        "end_time_s": 1.270207,
+        "duration_s": 0.068368,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 2,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1270207,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1270207,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.270207,
+        "end_time_s": 1.338576,
+        "duration_s": 0.068368,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 3,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1338575,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1338575,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.338576,
+        "end_time_s": 1.406944,
+        "duration_s": 0.068368,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 4,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1406944,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1406944,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.406944,
+        "end_time_s": 1.475313,
+        "duration_s": 0.068369,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 5,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1475312,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1475312,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.475313,
+        "end_time_s": 1.543681,
+        "duration_s": 0.068369,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 6,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1543681,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1543681,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.543681,
+        "end_time_s": 1.61205,
+        "duration_s": 0.068369,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 7,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1612050,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1612050,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.61205,
+        "end_time_s": 1.680419,
+        "duration_s": 0.068369,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 8,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68369
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1680419,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1680419,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.680419,
+        "end_time_s": 1.748789,
+        "duration_s": 0.068369,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 9,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68369
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1748788,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1748788,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.748789,
+        "end_time_s": 1.817158,
+        "duration_s": 0.068369,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 10,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68369
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1817158,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1817158,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.817158,
+        "end_time_s": 1.885528,
+        "duration_s": 0.06837,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 11,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68369
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1885527,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1885527,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.885528,
+        "end_time_s": 1.953898,
+        "duration_s": 0.06837,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 12,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68369
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 1953897,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 1953897,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.953898,
+        "end_time_s": 2.022268,
+        "duration_s": 0.06837,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 13,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68369
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 2022267,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 2022267,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 2.022268,
+        "end_time_s": 2.090638,
+        "duration_s": 0.06837,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 14,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68370
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 2090637,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 2090637,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 2.090638,
+        "end_time_s": 2.159008,
+        "duration_s": 0.06837,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 15,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68370
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 2159008,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_3",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_32",
+      "tid": 0,
+      "ts": 2159008,
+      "args": {
+        "request_id": "req_3",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_32",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 2.159008,
+        "end_time_s": 2.227379,
+        "duration_s": 0.06837,
+        "target_output_tokens": 17,
+        "generated_tokens_total": 16,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68370
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 2227378,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_32",
+      "tid": "engine",
+      "ts": 2227378,
+      "args": {
+        "used_blocks": 0,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 752445,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "P:req_4",
+      "cat": "request.prefill",
+      "ph": "X",
+      "pid": "node_33",
+      "tid": 0,
+      "ts": 752445,
+      "args": {
+        "request_id": "req_4",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_33",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "prefill",
+        "start_time_s": 0.752446,
+        "end_time_s": 0.760846,
+        "duration_s": 0.0084,
+        "prompt_tokens": 1027,
+        "target_output_tokens": 10
+      },
+      "dur": 8399
+    },
+    {
+      "name": "D:req_4",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_33",
+      "tid": 0,
+      "ts": 760845,
+      "args": {
+        "request_id": "req_4",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_33",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.760846,
+        "end_time_s": 0.762077,
+        "duration_s": 0.001231,
+        "target_output_tokens": 10,
+        "generated_tokens_total": 0,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 1230
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 762076,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_4",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_33",
+      "tid": 0,
+      "ts": 762076,
+      "args": {
+        "request_id": "req_4",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_33",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.762077,
+        "end_time_s": 0.763308,
+        "duration_s": 0.001231,
+        "target_output_tokens": 10,
+        "generated_tokens_total": 1,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 1230
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 763307,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_4",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_33",
+      "tid": 0,
+      "ts": 763307,
+      "args": {
+        "request_id": "req_4",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_33",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.763308,
+        "end_time_s": 0.764538,
+        "duration_s": 0.001231,
+        "target_output_tokens": 10,
+        "generated_tokens_total": 2,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 1230
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 764538,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_4",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_33",
+      "tid": 0,
+      "ts": 764538,
+      "args": {
+        "request_id": "req_4",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_33",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.764538,
+        "end_time_s": 0.765769,
+        "duration_s": 0.001231,
+        "target_output_tokens": 10,
+        "generated_tokens_total": 3,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 1230
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 765769,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_4",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_33",
+      "tid": 0,
+      "ts": 765769,
+      "args": {
+        "request_id": "req_4",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_33",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.765769,
+        "end_time_s": 0.767,
+        "duration_s": 0.001231,
+        "target_output_tokens": 10,
+        "generated_tokens_total": 4,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 1230
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 767000,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_4",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_33",
+      "tid": 0,
+      "ts": 767000,
+      "args": {
+        "request_id": "req_4",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_33",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.767,
+        "end_time_s": 0.768231,
+        "duration_s": 0.001231,
+        "target_output_tokens": 10,
+        "generated_tokens_total": 5,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 1230
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 768231,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_4",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_33",
+      "tid": 0,
+      "ts": 768231,
+      "args": {
+        "request_id": "req_4",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_33",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.768231,
+        "end_time_s": 0.769462,
+        "duration_s": 0.001231,
+        "target_output_tokens": 10,
+        "generated_tokens_total": 6,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 1230
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 769462,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_4",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_33",
+      "tid": 0,
+      "ts": 769462,
+      "args": {
+        "request_id": "req_4",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_33",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.769462,
+        "end_time_s": 0.770693,
+        "duration_s": 0.001231,
+        "target_output_tokens": 10,
+        "generated_tokens_total": 7,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 1230
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 770693,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_4",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_33",
+      "tid": 0,
+      "ts": 770693,
+      "args": {
+        "request_id": "req_4",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_33",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.770693,
+        "end_time_s": 0.771924,
+        "duration_s": 0.001231,
+        "target_output_tokens": 10,
+        "generated_tokens_total": 8,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 1230
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 771924,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "D:req_4",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_33",
+      "tid": 0,
+      "ts": 771924,
+      "args": {
+        "request_id": "req_4",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_33",
+        "engine_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.771924,
+        "end_time_s": 0.773155,
+        "duration_s": 0.001231,
+        "target_output_tokens": 10,
+        "generated_tokens_total": 9,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 1231
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 773155,
+      "args": {
+        "used_blocks": 65,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_33",
+      "tid": "engine",
+      "ts": 773155,
+      "args": {
+        "used_blocks": 0,
+        "total_blocks": 146871
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 410361,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "P:req_2",
+      "cat": "request.prefill",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 410361,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "prefill",
+        "start_time_s": 0.410361,
+        "end_time_s": 0.879991,
+        "duration_s": 0.46963,
+        "prompt_tokens": 1023,
+        "target_output_tokens": 12
+      },
+      "dur": 469629
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 879990,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.879991,
+        "end_time_s": 0.948358,
+        "duration_s": 0.068368,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 0,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68367
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 948358,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 948358,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 0.948358,
+        "end_time_s": 1.016726,
+        "duration_s": 0.068368,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 1,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68367
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1016725,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 1016725,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.016726,
+        "end_time_s": 1.085094,
+        "duration_s": 0.068368,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 2,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68367
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1085093,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 1085093,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.085094,
+        "end_time_s": 1.153462,
+        "duration_s": 0.068368,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 3,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1153461,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 1153461,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.153462,
+        "end_time_s": 1.22183,
+        "duration_s": 0.068368,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 4,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1221830,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 1221830,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.22183,
+        "end_time_s": 1.290199,
+        "duration_s": 0.068368,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 5,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1290198,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 1290198,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.290199,
+        "end_time_s": 1.358567,
+        "duration_s": 0.068369,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 6,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1358567,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 1358567,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.358567,
+        "end_time_s": 1.426936,
+        "duration_s": 0.068369,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 7,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1426936,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 1426936,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.426936,
+        "end_time_s": 1.495305,
+        "duration_s": 0.068369,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 8,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68368
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1495304,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 1495304,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.495305,
+        "end_time_s": 1.563674,
+        "duration_s": 0.068369,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 9,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68369
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1563674,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 1563674,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.563674,
+        "end_time_s": 1.632043,
+        "duration_s": 0.068369,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 10,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68369
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1632043,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "D:req_2",
+      "cat": "request.decode",
+      "ph": "X",
+      "pid": "node_38",
+      "tid": 0,
+      "ts": 1632043,
+      "args": {
+        "request_id": "req_2",
+        "requested_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "engine_id": "node_38",
+        "engine_model": "meta-llama/Llama-3.2-1B-Instruct",
+        "hardware": "NVDA:A100_80G:SXM",
+        "phase": "decode",
+        "start_time_s": 1.632043,
+        "end_time_s": 1.700413,
+        "duration_s": 0.068369,
+        "target_output_tokens": 12,
+        "generated_tokens_total": 11,
+        "tokens_emitted_this_step": 1
+      },
+      "dur": 68369
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1700412,
+      "args": {
+        "used_blocks": 64,
+        "total_blocks": 34121
+      }
+    },
+    {
+      "name": "BlockUsage",
+      "cat": "memory",
+      "ph": "C",
+      "pid": "node_38",
+      "tid": "engine",
+      "ts": 1700412,
+      "args": {
+        "used_blocks": 0,
+        "total_blocks": 34121
+      }
+    }
+  ],
+  "displayTimeUnit": "ms"
+}
