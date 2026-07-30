@@ -324,39 +324,27 @@ python scheduler/cli/run_hexgen3_live_autoscaler_trace_replay.py \
 If you find HexGen useful, please cite the HexGen family of papers:
 
 ```bibtex
-@inproceedings{jiang2024hexgen,
-  title = {HexGen: Generative Inference of Large Language Model over Heterogeneous Environment},
-  author = {Jiang, Youhe and Yan, Ran and Yao, Xiaozhe and Zhou, Yang and Chen, Beidi and Yuan, Binhang},
-  booktitle = {Proceedings of the 41st International Conference on Machine Learning},
-  pages = {21946--21961},
-  year = {2024},
-  volume = {235},
-  series = {Proceedings of Machine Learning Research},
-  publisher = {PMLR},
-  url = {https://proceedings.mlr.press/v235/jiang24f.html}
+@inproceedings{jianghexgen,
+  title={HexGen: Generative Inference of Large Language Model over Heterogeneous Environment},
+  author={JIANG, YOUHE and Yan, Ran and Yao, Xiaozhe and Zhou, Yang and Chen, Beidi and Yuan, Binhang},
+  booktitle={Forty-first International Conference on Machine Learning}
 }
 
-@inproceedings{jiang2025hexgen2,
-  title = {HexGen-2: Disaggregated Generative Inference of LLMs in Heterogeneous Environment},
-  author = {Jiang, Youhe and Yan, Ran and Yuan, Binhang},
-  booktitle = {The Thirteenth International Conference on Learning Representations},
-  year = {2025},
-  url = {https://proceedings.iclr.cc/paper_files/paper/2025/hash/0b941a1e5fbce23fe46b049999d04ed0-Abstract-Conference.html}
+@inproceedings{jianghexgen2,
+  title={HexGen-2: Disaggregated Generative Inference of LLMs in Heterogeneous Environment},
+  author={JIANG, YOUHE and Yan, Ran and Yuan, Binhang},
+  booktitle={The Thirteenth International Conference on Learning Representations}
 }
 
-@inproceedings{jiang2025demystifying,
-  title = {Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs},
-  author = {Jiang, Youhe and Fu, Fangcheng and Yao, Xiaozhe and He, Guoliang and Miao, Xupeng and Klimovic, Ana and Cui, Bin and Yuan, Binhang and Yoneki, Eiko},
-  booktitle = {International Conference on Machine Learning},
-  pages = {27534--27552},
-  year = {2025},
-  organization = {PMLR}
+@inproceedings{jiangdemystifying,
+  title={Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs},
+  author={JIANG, YOUHE and Fu, Fangcheng and Yao, Xiaozhe and HE, Guoliang and Miao, Xupeng and Klimovic, Ana and CUI, Bin and Yuan, Binhang and Yoneki, Eiko},
+  booktitle={Forty-second International Conference on Machine Learning}
 }
 
-@inproceedings{jiang2026hexgen3,
-  title = {HexGen-3: A Fully Disaggregated LLM Serving Framework with Fine-Grained Heterogeneous Resource Autoscaling},
-  author = {Jiang, Youhe and Li, Wenshuang and Peng, You and Zhang, Jintao and Yan, Ran and Chen, Jianfei and Han, Xu and Fu, Fangcheng and Yuan, Binhang},
-  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
-  year = {2026}
+@inproceedings{jianghexgen3,
+  title={HexGen-3: A Fully Disaggregated LLM Serving Framework with Fine-Grained Heterogeneous Resource Autoscaling},
+  author={Jiang, Youhe and Li, Wenshuang and Peng, You and Zhang, Jintao and Yan, Ran and Chen, Jianfei and Han, Xu and Fu, Fangcheng and Yuan, Binhang},
+  booktitle={Forty-third International Conference on Machine Learning}
 }
 ```
