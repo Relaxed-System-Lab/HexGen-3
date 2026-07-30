@@ -1,7 +1,7 @@
 <h2 align="center">HexGen-3: A Fully Disaggregated LLM Serving Framework with Fine-Grained Heterogeneous Resource Autoscaling</h2>
 
 <p align="center">
-  <a href="https://arxiv.org/pdf/2311.11514">
+  <a href="https://openreview.net/pdf?id=9ANyvRtFGa">
     <img alt="HexGen paper" src="https://img.shields.io/badge/HexGen-Paper-b31b1b?style=for-the-badge&logo=googledocs&logoColor=white">
   </a>
   <a href="https://proceedings.iclr.cc/paper_files/paper/2025/file/0b941a1e5fbce23fe46b049999d04ed0-Paper-Conference.pdf">
