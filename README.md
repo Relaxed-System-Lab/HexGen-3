@@ -10,7 +10,7 @@
   <a href="https://arxiv.org/pdf/2502.00722">
     <img alt="Cost-Efficiency paper" src="https://img.shields.io/badge/Cost--Efficiency-Paper-b31b1b?style=for-the-badge&logo=googledocs&logoColor=white">
   </a>
-  <a href="https://openreview.net/attachment?id=fVG57FKBNp&name=originally_submitted_PDF">
+  <a href="https://openreview.net/pdf?id=fVG57FKBNp">
     <img alt="HexGen-3 paper" src="https://img.shields.io/badge/HexGen--3-Paper-b31b1b?style=for-the-badge&logo=googledocs&logoColor=white">
   </a>
 </p>
