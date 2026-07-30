@@ -7,6 +7,9 @@
   <a href="https://proceedings.iclr.cc/paper_files/paper/2025/file/0b941a1e5fbce23fe46b049999d04ed0-Paper-Conference.pdf">
     <img alt="HexGen-2 paper" src="https://img.shields.io/badge/HexGen--2-Paper-b31b1b?style=for-the-badge&logo=googledocs&logoColor=white">
   </a>
+  <a href="https://openreview.net/pdf?id=xnEv5pq4cB">
+    <img alt="Cost-Efficiency paper" src="https://img.shields.io/badge/Cost--Efficiency-Paper-b31b1b?style=for-the-badge&logo=googledocs&logoColor=white">
+  </a>
   <a href="https://openreview.net/pdf?id=fVG57FKBNp">
     <img alt="HexGen-3 paper" src="https://img.shields.io/badge/HexGen--3-Paper-b31b1b?style=for-the-badge&logo=googledocs&logoColor=white">
   </a>
