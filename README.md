@@ -1,16 +1,16 @@
 <h2 align="center">HexGen-3: A Fully Disaggregated LLM Serving Framework with Fine-Grained Heterogeneous Resource Autoscaling</h2>
 
 <p align="center">
-  <a href="https://openreview.net/pdf?id=9ANyvRtFGa">
+  <a href="https://arxiv.org/pdf/2311.11514">
     <img alt="HexGen paper" src="https://img.shields.io/badge/HexGen-Paper-b31b1b?style=for-the-badge&logo=googledocs&logoColor=white">
   </a>
   <a href="https://proceedings.iclr.cc/paper_files/paper/2025/file/0b941a1e5fbce23fe46b049999d04ed0-Paper-Conference.pdf">
     <img alt="HexGen-2 paper" src="https://img.shields.io/badge/HexGen--2-Paper-b31b1b?style=for-the-badge&logo=googledocs&logoColor=white">
   </a>
-  <a href="https://openreview.net/pdf?id=xnEv5pq4cB">
+  <a href="https://arxiv.org/pdf/2502.00722">
     <img alt="Cost-Efficiency paper" src="https://img.shields.io/badge/Cost--Efficiency-Paper-b31b1b?style=for-the-badge&logo=googledocs&logoColor=white">
   </a>
-  <a href="https://openreview.net/pdf?id=fVG57FKBNp">
+  <a href="https://openreview.net/attachment?id=fVG57FKBNp&name=originally_submitted_PDF">
     <img alt="HexGen-3 paper" src="https://img.shields.io/badge/HexGen--3-Paper-b31b1b?style=for-the-badge&logo=googledocs&logoColor=white">
   </a>
 </p>
